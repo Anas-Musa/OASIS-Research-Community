@@ -1,0 +1,25 @@
+{
+    "name": "orc/v1",
+    "description": "",
+    "type": "library",
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "Organizer",
+            "email": "organizersamuel.os@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "ramsey/uuid": "4.x-dev",
+        "phpmailer/phpmailer": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "v1\\": "src/",
+            "v1\\Models\\": "src/models",
+            "v1\\Controllers\\": "src/controllers",
+            "v1\\Libraries\\Utilities\\": "src/libraries/utilities"
+        }
+    }
+}

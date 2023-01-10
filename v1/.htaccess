@@ -1,0 +1,11 @@
+php_flag display_errors on
+Options -Indexes
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteRule ^quotes$ src/controllers/quote.php [L]
+RewriteRule ^signup$ src/controllers/signup.php [L]
+RewriteRule ^verify$ src/controllers/verify_email.php [L]
+RewriteRule ^resend_otp$ src/controllers/resend_otp.php [L]
